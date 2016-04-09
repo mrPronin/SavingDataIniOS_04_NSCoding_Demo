@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Books</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>Zen in the Art of Writing</string>
+			<key>Publication Date</key>
+			<date>1990-03-01T17:00:00Z</date>
+			<key>Page Count</key>
+			<integer>176</integer>
+			<key>Author ID</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>The Hunger Games</string>
+			<key>Publication Date</key>
+			<date>2008-09-14T16:00:00Z</date>
+			<key>Page Count</key>
+			<integer>374</integer>
+			<key>Author ID</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>What Dreams May Come</string>
+			<key>Page Count</key>
+			<integer>304</integer>
+			<key>Publication Date</key>
+			<date>2015-11-04T15:00:20Z</date>
+			<key>Author ID</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Something Wicked This Way Comes</string>
+			<key>Publication Date</key>
+			<date>1960-09-01T16:00:00Z</date>
+			<key>Page Count</key>
+			<integer>317</integer>
+			<key>Author ID</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>Authors</key>
+	<array>
+		<dict>
+			<key>First Name</key>
+			<string>Suzanne</string>
+			<key>Last Name</key>
+			<string>Collins</string>
+			<key>Author ID</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>First Name</key>
+			<string>Ray</string>
+			<key>Last Name</key>
+			<string>Bradbury</string>
+			<key>Author ID</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>First Name</key>
+			<string>Richard</string>
+			<key>Last Name</key>
+			<string>Matheson</string>
+			<key>Author ID</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+</dict>
+</plist>
