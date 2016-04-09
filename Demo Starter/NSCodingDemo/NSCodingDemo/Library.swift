@@ -17,6 +17,17 @@ class Library: NSObject, NSCoding  {
         super.init()
     }
     
+    override var description: String {
+        var descriptionString:String = ""
+        for author in authors {
+            descriptionString = descriptionString + author.description + "\n"
+        }
+        for book in books {
+            descriptionString = descriptionString + book.description + "\n"
+        }
+        return descriptionString
+    }
+    
     required convenience init?(coder aDecoder: NSCoder) {
         let books = aDecoder.decodeObjectForKey("books") as! [Book]
         let authors = aDecoder.decodeObjectForKey("authors") as! [Author]

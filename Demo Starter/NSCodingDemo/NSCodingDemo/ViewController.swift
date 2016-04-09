@@ -52,7 +52,7 @@ class ViewController: UIViewController {
             }
         }
         
-        print(library)
+        //print(library)
         
         do {
             let documentDirectory = try fileManager.URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask, appropriateForURL: nil, create: false)
@@ -60,15 +60,15 @@ class ViewController: UIViewController {
             let saveFile = documentDirectory.URLByAppendingPathComponent("library.bin")
             
             // Save
+            /*
              let libraryData = NSKeyedArchiver.archivedDataWithRootObject(library)
              libraryData.writeToURL(saveFile, atomically: true)
+            */
             
             // Restore
-            /*
             let libraryReadData = try NSData(contentsOfURL: saveFile, options: .DataReadingMappedIfSafe)
             let lib = NSKeyedUnarchiver.unarchiveObjectWithData(libraryReadData) as! Library
             print(lib)
-            */
             
         } catch {
             print(error)
