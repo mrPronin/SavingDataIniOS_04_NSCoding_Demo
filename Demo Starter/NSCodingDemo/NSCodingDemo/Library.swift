@@ -8,20 +8,31 @@
 
 import Foundation
 
-class Library: NSObject  {
-  
-  var books: [Book] = []
-  var authors: [Author] = []
-  
-  override init() {
-    super.init()
-  }
-  
-  init(books:[Book], authors:[Author]) {
-    super.init()
-    self.books = books
-    self.authors = authors
-  }
-  
-  
+class Library: NSObject, NSCoding  {
+    
+    var books: [Book] = []
+    var authors: [Author] = []
+    
+    override init() {
+        super.init()
+    }
+    
+    required convenience init?(coder aDecoder: NSCoder) {
+        let books = aDecoder.decodeObjectForKey("books") as! [Book]
+        let authors = aDecoder.decodeObjectForKey("authors") as! [Author]
+        self.init(books: books, authors:  authors)
+    }
+    
+    func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeObject(books, forKey: "books")
+        aCoder.encodeObject(authors, forKey: "authors")
+    }
+    
+    init(books:[Book], authors:[Author]) {
+        super.init()
+        self.books = books
+        self.authors = authors
+    }
+    
+    
 }
